@@ -1,5 +1,4 @@
 ## Build a Content Scraper - - Treehouse tech degree project 6
-================================
 
 ## Requirements
 
