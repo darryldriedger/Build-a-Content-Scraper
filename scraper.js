@@ -29,7 +29,7 @@
   request(entryURL, function(error, response, html){
     if(error){
       fs.appendFileSync(`scraper-error.log`, ` [ ${new Date()} ] <  [scraper error URL issue or website down] ${error} > ,\n`);
-      console.log('error logged to: scraper-error.log');
+      console.log('error logged to: scraper-error.log \n URL issues or website is down');
       return;
     }
     if(!error){
@@ -53,7 +53,7 @@
         //logs an error if one occurs
         if(error){
           fs.appendFileSync(`scraper-error.log`, `[ ${new Date()} ] <  [scraper error URL# ${i} ${url} issue or website down] ${error} > ,\n`);
-          console.log(`error url# ${i} ${url} logged to: scraper-error.log`);
+          console.log(`error url# ${i} ${url} logged to: scraper-error.log \n URL issues or website is down`);
           return;
         }
         if(!error){
