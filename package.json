@@ -1,15 +1,17 @@
 {
-  "name": "build-a-content-scraper",
+  "name": "node-web-scrape",
   "version": "0.0.1",
   "description": "Web scraper project TEch degree",
   "main": "scraper.js",
   "author": "Darryl",
+  "scripts": {
+    "start": "node scraper.js "
+  },
   "dependencies": {
     "cheerio": "latest",
+    "express": "latest",
     "json2csv": "^3.11.2",
     "request": "latest",
-    "scripts": {
-      "start": "node scraper.js "
-    }
+    "scrape-it": "^3.3.3"
   }
 }
